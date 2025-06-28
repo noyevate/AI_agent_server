@@ -6,7 +6,6 @@ const Price = require("../models/Price")
 const Others = require("../models/Others")
 
 const { generateOTP, hashPIN } = require('../utils/generate_otp');
-const { sendOTP } = require('../utils/send_otp');
 const { sendEmail } = require('../utils/smtp_function')
 const bcrypt = require('bcryptjs');
 const CryptoJs = require("crypto-js");
