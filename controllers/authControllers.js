@@ -353,7 +353,6 @@ async function resendOTP(req, res) {
     await user.save();
 
     // Send OTP
-    await sendOTP(user.phone, otp);
 
     res.status(201).json({ status: true, message: 'OTP resent successfully' });
   } catch (error) {
